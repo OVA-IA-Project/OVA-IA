@@ -1,0 +1,22 @@
+{
+  "name": "ova-ia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OVA-IA · Objeto Virtual de Aprendizaje Grado 10° — App estudiante (PWA) + plataforma docente",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@ova-ia/student",
+    "build": "npm run build --workspace=@ova-ia/student",
+    "preview": "npm run preview --workspace=@ova-ia/student",
+    "typecheck": "npm run typecheck --workspace=@ova-ia/student",
+    "lint": "npm run typecheck"
+  },
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10.0.0"
+  }
+}

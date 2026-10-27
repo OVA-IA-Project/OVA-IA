@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cbdbf5", "outline": "#757684", "on-background": "#0b1c30", "secondary-fixed": "#85f8c4", "tertiary-fixed": "#ffdbce", "on-error-container": "#93000a", "on-secondary-container": "#00714e", "on-surface": "#0b1c30", "on-tertiary-container": "#ffa582", "primary-fixed-dim": "#b8c4ff", "on-secondary-fixed-variant": "#005137", "surface-variant": "#d3e4fe", "on-tertiary-fixed": "#370e00", "on-primary-fixed-variant": "#173bab", "on-primary-fixed": "#001453", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#ffb599", "primary-fixed": "#dde1ff", "surface": "#f8f9ff", "surface-container-highest": "#d3e4fe", "surface-container-lowest": "#ffffff", "outline-variant": "#c4c5d5", "inverse-on-surface": "#eaf1ff", "secondary-container": "#82f5c1", "on-surface-variant": "#444653", "secondary": "#006c4a", "tertiary-container": "#872d00", "on-error": "#ffffff", "surface-container-high": "#dce9ff", "inverse-surface": "#213145", "surface-bright": "#f8f9ff", "surface-container-low": "#eff4ff", "background": "#f8f9ff", "inverse-primary": "#b8c4ff", "secondary-fixed-dim": "#68dba9", "on-primary-container": "#a8b8ff", "on-primary": "#ffffff", "surface-container": "#e5eeff", "primary": "#00288e", "on-tertiary-fixed-variant": "#7f2b00", "tertiary": "#611e00", "surface-tint": "#3755c3", "error": "#ba1a1a", "primary-container": "#1e40af", "on-secondary-fixed": "#002114", "on-tertiary": "#ffffff", "error-container": "#ffdad6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-xl": "2rem", "margin-desktop": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem" }, fontFamily: { "body-md": ["Inter"], "code-sm": ["JetBrains Mono"], "headline-xl-mobile": ["Inter"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"], "headline-lg": ["Inter"], "title-lg": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Inter"], "title-md": ["Inter"] }, fontSize: { "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "code-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{min-height:100%;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="OVA-IA Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzWjziSONwha4m26G-zCVa6ZytUJ4AHawoqcDJZzs9Fe2ZGd9w2c8UxKzM-oM7TVYr2pwCXxrfp8Qdeu2whWOfvLvx9aojoqxaeirPF5qH4pqQR0KNqcmIZpGaa_VFkfWvuC-K-fM1T_kCY-_FtqFawm10SsFRqRd3vYZVV_SXlYkDXiD9jlU3gnhYpS1h35q-zs1xqKOLU9sv2s6u_MPU-bTqWfxiIb5HB3R7dMQv-cVIAtCGzIIc0A"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold leading-none">OVA-IA 10°</span><h1 class="font-title-md text-title-md text-on-surface truncate">Progreso</h1></div></div><div class="flex items-center gap-space-xs"><div class="hidden sm:flex items-center px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-code-sm text-code-sm"><span>EST-10A</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-16 pb-24 px-margin flex flex-col"><div class="flex flex-col w-full gap-space-md">
+<!-- Tarjeta de Racha de Indagación Formativa -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="text-tertiary-container text-[22px] leading-none">🔥</span>
+<h2 class="font-title-md text-title-md text-tertiary-container font-semibold">4 días seguidos de indagación</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-code-sm">Racha actual</span>
+</div>
+<!-- Tracker semanal -->
+<div class="flex items-center justify-between py-space-sm px-space-xs">
+<!-- Lunes -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">done</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">L</span>
+</div>
+<!-- Martes -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">done</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">M</span>
+</div>
+<!-- Miércoles -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">done</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">X</span>
+</div>
+<!-- Jueves (Hoy) -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-md text-label-md shadow-sm ring-offset-2">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary-container">J</span>
+</div>
+<!-- Viernes -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-outline flex items-center justify-center font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">V</span>
+</div>
+<!-- Sábado -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-outline flex items-center justify-center font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">S</span>
+</div>
+<!-- Domingo -->
+<div class="flex flex-col items-center gap-1.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-outline flex items-center justify-center font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">D</span>
+</div>
+</div>
+<!-- Mensaje pedagógico empático -->
+<div class="mt-space-sm p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[18px] flex-shrink-0 mt-0.5">favorite</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Tu mejor racha: <strong class="text-on-surface font-semibold">6 días</strong> · Las pausas son parte natural del aprendizaje, tu racha no se penaliza ni pierdes tu avance.
+      </p>
+</div>
+</section>
+<!-- Siguiente Paso Recomendado (Llamado a la acción contextual) -->
+<section class="w-full bg-primary-container text-on-primary rounded-xl p-space-md shadow-md relative overflow-hidden">
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none translate-x-4 translate-y-4">
+<span class="material-symbols-outlined text-[120px]">explore</span>
+</div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">rocket_launch</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-bold">Mi siguiente paso</span>
+</div>
+<h3 class="font-title-md text-title-md font-semibold text-on-primary">Continuar con el laboratorio virtual de Vectores en OA-02</h3>
+<div class="flex items-center gap-space-sm mt-1 text-on-primary-container font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 15 min</span>
+<span class="w-1 h-1 rounded-full bg-on-primary-container"></span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">science</span> Física Cinemática</span>
+</div>
+<a class="mt-space-sm inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest text-primary font-title-md text-title-md py-3 px-space-md rounded-lg shadow hover:bg-surface-container transition-transform active:scale-[0.98] min-h-[44px]" href="#">
+<span>Iniciar simulación</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Dominio por Objetivo de Aprendizaje -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Currículo Grado 10°</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Dominio por objetivo de aprendizaje</h2>
+</div>
+<span class="material-symbols-outlined text-outline">analytics</span>
+</div>
+<div class="flex flex-col gap-space-md mt-space-sm">
+<!-- OA-01 Biología -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-code-sm text-code-sm font-semibold flex-shrink-0">OA-01</span>
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Biología: Genética y Herencia</span>
+</div>
+<span class="font-code-sm text-code-sm font-bold text-secondary flex-shrink-0">72%</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 72%;"></div>
+</div>
+<div class="flex justify-between items-center text-outline font-label-sm text-label-sm pt-0.5">
+<span>Nivel: Consolidación conceptual</span>
+<span>4/5 desafíos completados</span>
+</div>
+</div>
+<!-- OA-02 Física -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-code-sm text-code-sm font-semibold flex-shrink-0">OA-02</span>
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Física: Leyes de Newton y Fuerzas</span>
+</div>
+<span class="font-code-sm text-code-sm font-bold text-primary-container flex-shrink-0">41%</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 41%;"></div>
+</div>
+<div class="flex justify-between items-center text-outline font-label-sm text-label-sm pt-0.5">
+<span>Nivel: Exploración inicial</span>
+<span>2/5 desafíos completados</span>
+</div>
+</div>
+<!-- OA-03 Química -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-code-sm text-code-sm font-semibold flex-shrink-0">OA-03</span>
+<span class="font-body-md text-body-md font-medium text-on-surface truncate">Química: Estructura Atómica y Enlaces</span>
+</div>
+<span class="font-code-sm text-code-sm font-bold text-tertiary-container flex-shrink-0">63%</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 63%;"></div>
+</div>
+<div class="flex justify-between items-center text-outline font-label-sm text-label-sm pt-0.5">
+<span>Nivel: Comprensión relacional</span>
+<span>3/5 desafíos completados</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Mi Bitácora de Hoy (Diario reflexivo formativo) -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">edit_note</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Mi bitácora de hoy</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+      ¿Qué concepto científico entendiste hoy que antes te parecía confuso?
+    </p>
+<div class="flex flex-col gap-space-sm">
+<div class="w-full relative">
+<textarea class="w-full p-space-sm bg-surface rounded-lg font-body-md text-body-md text-on-surface placeholder-outline focus:outline-none focus:bg-surface-container-low transition-colors resize-none" id="reflection-input" placeholder="Escribe aquí con tus propias palabras..." rows="3"></textarea>
+</div>
+<div class="hidden p-space-xs bg-secondary-container text-on-secondary-container rounded-lg items-center gap-space-xs font-label-sm text-label-sm animate-fade" id="reflection-toast">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+<span>¡Reflexión guardada en tu bitácora de aprendizaje!</span>
+</div>
+<button class="w-full min-h-[44px] bg-primary text-on-primary rounded-xl font-title-md text-title-md py-3 px-space-md flex items-center justify-center gap-space-xs shadow active:scale-[0.98] transition-transform" id="save-reflection-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_add</span>
+<span>Guardar reflexión en mi diario</span>
+</button>
+</div>
+</section>
+<!-- Mis Insignias Formativas -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">military_tech</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Mis insignias formativas</h2>
+</div>
+<span class="font-code-sm text-code-sm font-semibold text-secondary">3/6 obtenidas</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mb-space-md">Hitos alcanzados a través de tu rigor, curiosidad y proceso indagatorio.</p>
+<!-- Grid 2 columnas accesible -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- 1. Desbloqueada: Explorador -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1.5">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">biotech</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Explorador</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Descubriste 5 simulaciones interactivas</p>
+</div>
+<!-- 2. Desbloqueada: Detective -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1.5">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">saved_search</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Detective</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Formulaste 3 hipótesis comprobadas</p>
+</div>
+<!-- 3. Desbloqueada: Preguntón -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center text-center gap-1.5">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">psychology_alt</span>
+</div>
+<span class="font-title-md text-title-md font-semibold text-on-surface">Preguntón</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Pediste 5 pistas reflexivas al Tutor IA</p>
+</div>
+<!-- 4. Bloqueada: Síntesis Holística -->
+<div class="p-space-sm rounded-lg bg-surface-container-high opacity-70 flex flex-col items-center text-center gap-1.5">
+<div class="w-12 h-12 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<span class="font-title-md text-title-md font-medium text-outline">Síntesis Holística</span>
+<p class="font-label-sm text-label-sm text-outline leading-tight">Conecta conceptos entre Biología y Química</p>
+</div>
+<!-- 5. Bloqueada: Rigor Experimental -->
+<div class="p-space-sm rounded-lg bg-surface-container-high opacity-70 flex flex-col items-center text-center gap-1.5">
+<div class="w-12 h-12 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<span class="font-title-md text-title-md font-medium text-outline">Rigor Experimental</span>
+<p class="font-label-sm text-label-sm text-outline leading-tight">Registra 10 mediciones con margen de error</p>
+</div>
+<!-- 6. Bloqueada: Pensador Crítico -->
+<div class="p-space-sm rounded-lg bg-surface-container-high opacity-70 flex flex-col items-center text-center gap-1.5">
+<div class="w-12 h-12 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<span class="font-title-md text-title-md font-medium text-outline">Pensador Crítico</span>
+<p class="font-label-sm text-label-sm text-outline leading-tight">Cuestiona una respuesta heurística del tutor</p>
+</div>
+</div>
+</section>
+<!-- Tarjeta de Científico/a (Shareable offline achievement) -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">workspace_premium</span>
+<h2 class="font-title-md text-title-md text-on-surface font-semibold">Mi tarjeta de científico/a</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Exportable</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+      Tu identidad de investigación bajo protocolo ético. Descárgala localmente para tus evidencias de clase.
+    </p>
+<!-- Visual Credential Card Preview -->
+<div class="w-full bg-surface-container-highest rounded-xl p-space-md shadow-md text-on-surface relative overflow-hidden flex flex-col gap-space-md" id="scientist-card">
+<!-- Decoración de fondo de rigor científico -->
+<div class="absolute -right-6 -bottom-6 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[140px] text-primary">psychology</span>
+</div>
+<!-- Encabezado de la credencial -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Investigador Juvenil</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">Explorer (INS-A-C10-0042)</span>
+<span class="font-body-sm text-body-sm text-outline">Grado 10° · Ciencias Naturales</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm font-code-sm px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-bold">OVA-IA</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">2025</span>
+</div>
+</div>
+<!-- Resumen formativo dentro de la credencial -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="p-2 rounded bg-surface-container-lowest flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-outline">Insignias</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">3/6</span>
+</div>
+<div class="p-2 rounded bg-surface-container-lowest flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-outline">Foco</span>
+<span class="font-title-md text-title-md font-bold text-secondary">Genética</span>
+</div>
+<div class="p-2 rounded bg-surface-container-lowest flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-outline">Racha</span>
+<span class="font-title-md text-title-md font-bold text-tertiary-container">4 días</span>
+</div>
+</div>
+<!-- Sello oficial de rigor doctoral -->
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>Validación Pedagógica Empírica</span>
+</div>
+<div class="px-2 py-0.5 rounded-full bg-surface-container text-outline font-code-sm text-label-sm">
+          SELLO DOCTORAL-IA
+        </div>
+</div>
+</div>
+<!-- Botón de descarga offline (Sin feeds públicos ni redes sociales) -->
+<button class="mt-space-md w-full min-h-[44px] bg-surface-container-high hover:bg-surface-variant text-on-surface rounded-xl font-title-md text-title-md py-3 px-space-md flex items-center justify-center gap-space-xs transition-colors active:scale-[0.98]" id="download-card-btn" type="button">
+<span class="material-symbols-outlined text-primary text-[20px]">download</span>
+<span>Descargar tarjeta como imagen (PNG)</span>
+</button>
+<div class="hidden mt-space-xs text-center font-label-sm text-label-sm text-secondary font-medium" id="download-feedback">
+      ✓ Imagen generada y guardada en tu dispositivo.
+    </div>
+</section>
+</div>
+<script>
+  // Manejo de guardado en bitácora
+  const saveBtn = document.getElementById('save-reflection-btn');
+  const reflectionInput = document.getElementById('reflection-input');
+  const toast = document.getElementById('reflection-toast');
+
+  if (saveBtn && reflectionInput && toast) {
+    saveBtn.addEventListener('click', () => {
+      const text = reflectionInput.value.trim();
+      if (text.length > 0) {
+        toast.classList.remove('hidden');
+        toast.classList.add('flex');
+        reflectionInput.value = '';
+        saveBtn.disabled = true;
+        saveBtn.classList.add('opacity-50');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+          toast.classList.remove('flex');
+          saveBtn.disabled = false;
+          saveBtn.classList.remove('opacity-50');
+        }, 3500);
+      } else {
+        reflectionInput.focus();
+      }
+    });
+  }
+
+  // Descarga local simulada de la tarjeta de científico
+  const downloadBtn = document.getElementById('download-card-btn');
+  const downloadFeedback = document.getElementById('download-feedback');
+
+  if (downloadBtn && downloadFeedback) {
+    downloadBtn.addEventListener('click', () => {
+      downloadBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Generando tarjeta...</span>';
+      setTimeout(() => {
+        downloadBtn.innerHTML = '<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span><span>Descarga completa</span>';
+        downloadFeedback.classList.remove('hidden');
+        setTimeout(() => {
+          downloadBtn.innerHTML = '<span class="material-symbols-outlined text-primary text-[20px]">download</span><span>Descargar tarjeta como imagen (PNG)</span>';
+          downloadFeedback.classList.add('hidden');
+        }, 4000);
+      }, 1000);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,28,48,0.06)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Inicio</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="aprender" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm mt-0.5">Aprender</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="tutor-ia" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">auto_awesome</span></div><span class="font-label-sm text-label-sm mt-0.5">Tutor IA</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] min-w-[44px] py-1 transition-colors text-primary-container font-semibold" data-path="progreso" href="#"><span class="material-symbols-outlined text-[24px]">insights</span><span class="font-label-sm text-label-sm mt-0.5">Progreso</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] min-w-[44px] py-1 text-on-surface-variant transition-colors" data-path="mas" href="#"><span class="material-symbols-outlined text-[24px]">more_horiz</span><span class="font-label-sm text-label-sm mt-0.5">Más</span></a></div></nav></body></html>

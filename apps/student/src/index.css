@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+@import '@ova-ia/shared/tokens.css';
+
+/* =========================================================================
+   Base
+   ========================================================================= */
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-on-surface);
+    background-color: var(--color-surface);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    /* Evita el desborde horizontal en móviles estrechos */
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  /* Foco visible y accesible en todo el sistema (WCAG 2.4.7) */
+  :focus-visible {
+    outline: 2px solid var(--color-primary-container);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Respeta la preferencia del sistema operativo */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* ── Preferencias del estudiante (activadas desde Ajustes) ─────────────── */
+  body.font-dyslexic {
+    font-family: 'Comic Sans MS', 'OpenDyslexic', system-ui, sans-serif !important;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+  }
+
+  body.high-contrast {
+    filter: contrast(125%);
+  }
+
+  body.text-size-large {
+    font-size: 112% !important;
+  }
+
+  body.text-size-xlarge {
+    font-size: 125% !important;
+  }
+}
+
+/* =========================================================================
+   Utilidades propias
+   ========================================================================= */
+@utility pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom, 0px), 16px);
+}
+
+@utility pt-safe {
+  padding-top: max(env(safe-area-inset-top, 0px), 8px);
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

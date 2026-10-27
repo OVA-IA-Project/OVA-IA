@@ -1,0 +1,16 @@
+# Normaliza finales de línea (evita ruido entre Windows, macOS y Linux)
+* text=auto eol=lf
+
+# Binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.pdf binary
+*.zip binary
+*.ico binary
+
+# Scripts de Windows conservan CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf

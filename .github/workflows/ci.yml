@@ -1,0 +1,45 @@
+# ─────────────────────────────────────────────────────────────
+# OVA-IA · Integración continua
+# Verifica tipos y compila. El deploy lo hace Vercel.
+# ─────────────────────────────────────────────────────────────
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Tipos y build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Verificar tipos (app estudiante)
+        run: npx tsc --noEmit -p apps/student/tsconfig.json
+
+      - name: Verificar tipos (paquete compartido)
+        run: npx tsc --noEmit -p packages/shared/tsconfig.json
+
+      - name: Build
+        run: npm run build
+        env:
+          # Valores ficticios: el build no se conecta a Supabase.
+          VITE_SUPABASE_URL: https://placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: placeholder-anon-key

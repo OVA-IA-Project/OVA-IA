@@ -1,0 +1,148 @@
+/* =========================================================================
+   OVA-IA · tokens de diseño (Tailwind v4)
+   Fuente: docs/design/DESIGN.md, con correcciones documentadas en tokens.ts
+   ========================================================================= */
+
+@theme {
+  /* Superficies */
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+
+  /* Texto */
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #444653;
+  --color-on-background: #0b1c30;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+
+  /* Bordes (oscurecido de #757684 para cumplir AA en 11–13 px) */
+  --color-outline: #5f6070;
+  --color-outline-variant: #c4c5d5;
+
+  /* Primario */
+  --color-primary: #00288e;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1e40af;
+  --color-on-primary-container: #a8b8ff;
+  --color-primary-fixed: #dde1ff;
+  --color-primary-fixed-dim: #b8c4ff;
+  --color-on-primary-fixed: #001453;
+  --color-on-primary-fixed-variant: #173bab;
+  --color-inverse-primary: #b8c4ff;
+  --color-surface-tint: #3755c3;
+
+  /* Secundario (Biología) */
+  --color-secondary: #006c4a;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #82f5c1;
+  --color-on-secondary-container: #00714e;
+  --color-secondary-fixed: #85f8c4;
+  --color-secondary-fixed-dim: #68dba9;
+  --color-on-secondary-fixed: #002114;
+  --color-on-secondary-fixed-variant: #005137;
+
+  /* Terciario */
+  --color-tertiary: #611e00;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #872d00;
+  --color-on-tertiary-container: #ffa582;
+  --color-tertiary-fixed: #ffdbce;
+  --color-tertiary-fixed-dim: #ffb599;
+  --color-on-tertiary-fixed: #370e00;
+  --color-on-tertiary-fixed-variant: #7f2b00;
+
+  /* Error */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* Dominios científicos — exclusivos */
+  --color-bio: #006c4a;
+  --color-bio-soft: #82f5c1;
+  --color-bio-on-soft: #005137;
+  --color-fis: #1e40af;
+  --color-fis-soft: #dde1ff;
+  --color-fis-on-soft: #173bab;
+  --color-qui: #c2410c;
+  --color-qui-soft: #ffdbce;
+  --color-qui-on-soft: #7f2b00;
+
+  /* Racha — token propio, ya no comparte color con Química */
+  --color-streak: #b45309;
+  --color-streak-soft: #fef3c7;
+  --color-streak-on-soft: #78350f;
+
+  /* Tipografía */
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --font-body-md: Inter, sans-serif;
+  --font-body-sm: Inter, sans-serif;
+  --font-body-lg: Inter, sans-serif;
+  --font-title-md: Inter, sans-serif;
+  --font-title-lg: Inter, sans-serif;
+  --font-headline-md: Inter, sans-serif;
+  --font-label-sm: Inter, sans-serif;
+  --font-label-md: Inter, sans-serif;
+  --font-code-sm: 'JetBrains Mono', monospace;
+
+  --text-body-md: 14px;
+  --text-body-md--line-height: 22px;
+  --text-body-md--font-weight: 400;
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 18px;
+  --text-body-sm--font-weight: 400;
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 26px;
+  --text-body-lg--font-weight: 400;
+  --text-title-md: 16px;
+  --text-title-md--line-height: 24px;
+  --text-title-md--font-weight: 600;
+  --text-title-lg: 18px;
+  --text-title-lg--line-height: 26px;
+  --text-title-lg--font-weight: 600;
+  --text-headline-md: 20px;
+  --text-headline-md--line-height: 28px;
+  --text-headline-md--font-weight: 600;
+  --text-label-sm: 11px;
+  --text-label-sm--line-height: 14px;
+  --text-label-sm--font-weight: 500;
+  --text-label-sm--letter-spacing: 0.03em;
+  --text-label-md: 12px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--font-weight: 600;
+  --text-label-md--letter-spacing: 0.02em;
+  --text-code-sm: 13px;
+  --text-code-sm--line-height: 18px;
+  --text-code-sm--font-weight: 400;
+
+  /* Espaciado */
+  --spacing-gutter: 1rem;
+  --spacing-gutter-desktop: 1.5rem;
+  --spacing-margin: 1rem;
+  --spacing-margin-desktop: 2rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2rem;
+
+  /* Radios */
+  --radius-sm: 0.25rem;
+  --radius-DEFAULT: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* Sombras */
+  --shadow-resting: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+  --shadow-interactive: 0 4px 6px -1px rgba(30, 64, 175, 0.07), 0 2px 4px -2px rgba(30, 64, 175, 0.05);
+  --shadow-floating: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+}

@@ -1,0 +1,53 @@
+# Dependencias
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# Entorno — nunca subir claves
+.env
+.env.*
+!.env.example
+
+# Supabase
+supabase/.temp/
+supabase/.branches/
+.supabase/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Cobertura y pruebas
+coverage/
+playwright-report/
+test-results/
+
+# Material de diseño duplicado en la raíz (vive en docs/design/)
+/code.html
+/screen.png
+/DESIGN.md
+
+# Material de referencia fuera del repo (no versionar el export de AI Studio)
+*.zip
+
+# Temporales de herramientas y cachés locales
+.npm-cache/
+.tmp/
